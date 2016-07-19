@@ -1,0 +1,117 @@
+@import url("../flatsome/css/foundation.css");
+/*
+Theme Name: Baressi Benefits
+Description: This is a child theme for Baressi Benefits
+Author: Reach Maine Marketing
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.5.6
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+/* =Theme customization starts here */
+/****** header ***********/
+.header-wrapper a {
+  color: white; }
+.header-wrapper a:hover {
+  color: #d7e0ea; }
+
+#logo a {
+  padding-top: 0px; }
+
+/* Top Slider */
+.ux-slider, .ux-row-slider {
+  margin-bottom: 0px; }
+
+/****** content ***********/
+.page-wrapper {
+  /* tighten space between slider and*/
+  padding-top: 20px; }
+
+.from_the_blog_comments {
+  display: none;
+  visibility: hidden; }
+
+aside.widget.widget_recent_entries li {
+  padding-bottom: 15px; }
+
+/* content */
+.reach-border-box .column-inner {
+  border: 1px solid #004db2; }
+
+.reach-contact-form {
+  padding-top: 20px;
+  background-color: #d7e0ea;
+  border: 1px solid #1f4475; }
+
+body.archive h1.page-title {
+  text-align: left;
+  color: #555555; }
+
+.team-members .team-member img.avatar {
+  border-radius: 0px; }
+.team-members .team-member .our-team-tel a {
+  display: inline-block; }
+.team-members .team-member:not(:last-child) {
+  border-bottom: 1px solid #004db2;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+/******* sidebar stuff **********/
+#secondary aside:not(:first-child) {
+  border-top: 1px solid #C5C5C5;
+  padding-top: 20px; }
+#secondary aside .tx-div.small {
+  display: none; }
+#secondary .widget-title {
+  padding-bottom: 12px; }
+
+.reach-primary-background {
+  background-color: #004db2; }
+
+.metlife img {
+  background-color: #007cc2;
+  padding: 5px; }
+
+.barresi-buzz div.textwidget ul li {
+  list-style-position: inside;
+  padding-left: 20px; }
+
+/******* these should stay at bottom of this file **********/
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+/* Foundation Block Grids for above small breakpoint */
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  	/* #masthead {
+  		height: inherit!important;
+  		.header-container {
+  			display: block;
+  		}
+  		#right-logo-phone{
+  			display: block;
+  			.eai-right-image {
+  				padding-top: 10px;
+  				padding-bottom: 10px;
+  				float: none;
+  			}		
+  		}
+  
+  	}*/ }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+  body.archive h1.page-title {
+    font-size: 1.625em; } }
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */

@@ -1,0 +1,115 @@
+/*
+Theme Name: Baressi Benefits
+Description: This is a child theme for Baressi Benefits
+Author: Reach Maine Marketing
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.5.6
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+
+ 
+/* =Theme customization starts here */
+/****** header ***********/
+.header-wrapper{
+	a {
+		color: white;
+	} 
+	a:hover {
+		color: $light-blue;
+	}
+}
+
+#logo a {
+	padding-top: 0px;
+}
+
+/* Top Slider */
+.ux-slider, .ux-row-slider {
+	margin-bottom: 0px;
+}
+
+/****** content ***********/
+
+.page-wrapper {  /* tighten space between slider and*/
+	padding-top: 20px;
+}
+
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+
+/* content */
+.reach-border-box .column-inner {
+	border: 1px solid $flat-primary-color;
+}
+.reach-contact-form {
+	padding-top: 20px;
+	background-color: $contactform-background;
+	border: 1px solid $contractform-border;
+}
+// archive page title (make look like the page headers..)
+body.archive h1.page-title {
+	text-align: left;
+	color: #555555; // header color every where else;
+	///font-size: 1.625em; // same as other h1's - moved to media.
+}
+// woo_team 
+.team-members  {
+	.team-member {
+		img.avatar {
+			border-radius: 0px;
+		}
+		.our-team-tel a {
+			display: inline-block;
+		}
+	}
+	.team-member:not(:last-child) {
+		border-bottom: 1px solid $flat-primary-color;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	
+}
+/******* sidebar stuff **********/
+#secondary {
+	aside:not(:first-child) {
+		border-top: 1px solid #C5C5C5;
+		padding-top: 20px;
+	}
+	aside .tx-div.small {
+		display: none;
+	}
+	.widget-title {
+		padding-bottom: 12px;
+	}
+}
+.reach-widget-center {
+
+}
+.reach-primary-background {
+	background-color: $flat-primary-color;
+}
+.metlife {
+	img { 
+		background-color: $metlife-back-color;
+		padding: 5px;
+	}
+}
+
+.barresi-buzz div.textwidget ul li {
+	//list-style-type: disc;
+	list-style-position: inside;
+	padding-left: 20px;
+}
+/******* these should stay at bottom of this file **********/
+@import "partials/media"; 
