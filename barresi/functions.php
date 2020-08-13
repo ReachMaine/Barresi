@@ -1,13 +1,13 @@
 <?php
-	require_once(get_stylesheet_directory().'/custom/language.php'); 
-	require_once(get_stylesheet_directory().'/custom/woocommerce.php'); 
-	require_once(get_stylesheet_directory().'/custom/flat.php'); 
+	require_once(get_stylesheet_directory().'/custom/language.php');
+	require_once(get_stylesheet_directory().'/custom/woocommerce.php');
+	require_once(get_stylesheet_directory().'/custom/flat.php');
 
 
-	add_action('after_setup_theme', ea_setup);
+	add_action('after_setup_theme', 'ea_setup');
 	/**  ea_setup
 	*  init stuff that we have to init after the main theme is setup.
-	* 
+	*
 	*/
 	function ea_setup() {
 	 /* do stuff ehre. */
@@ -15,7 +15,7 @@
 		//reach_woo_setup();
 	 	add_action('login_head', 'add_favicon');
 		add_action('admin_head', 'add_favicon');
-	 
+
 	}
 	add_image_size('reach_featured_image', 750, 350, false);
 	function ea_custom_sizes( $sizes ) {
@@ -32,10 +32,10 @@
 	function mysite_opengraph_image_size($val) {
 		return 'facebook_share';
 	}
-	
-		// contact form 7 fallback for date field 
+
+		// contact form 7 fallback for date field
 	add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
-	
+
 	/*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">
@@ -54,7 +54,7 @@
 	function add_favicon() {
 	  	$favicon_url = get_stylesheet_directory_uri() . '/images/admin-favicon.ico';
 		echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
-	} 
+	}
 	add_action( 'login_footer', 'reach_login_branding' );
 	function reach_login_branding() {
 		$outstring = "";
